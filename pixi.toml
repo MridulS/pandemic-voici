@@ -1,0 +1,12 @@
+[workspace]
+authors = ["Mridul Seth <git@mriduls.com>"]
+channels = ["conda-forge"]
+name = "pandemic-voici"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+ghbuild = "voici build --contents notebooks --output-dir dist"
+
+[dependencies]
+voici = ">=0.8.0,<0.9"
